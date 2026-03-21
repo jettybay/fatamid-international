@@ -21,7 +21,7 @@ export default function Home() {
         `}</style>
         <div className="logo-entrance relative w-20 h-20 md:w-24 md:h-24 rounded-full shadow-2xl border-4 border-white">
           <Image
-            src="/images/fatamid.jpeg"
+            src="/images/Fatamid.jpeg"
             alt="Fatamid Logo"
             fill
             className="object-cover rounded-full"
