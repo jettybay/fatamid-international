@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-y-auto overflow-x-hidden overscroll-none relative bg-[#4169E1] font-sans">
+    <main className="min-h-screen relative bg-[#4169E1] font-sans">
       {/* Welcome Box - Moved to Top */}
-      <div className="absolute z-50 top-20 left-1/2 -translate-x-1/2 md:top-8 w-[90vw] max-w-xs md:w-auto mx-auto">
+      <div className="absolute z-50 top-10 left-1/2 -translate-x-1/2 md:top-8 w-[80%] max-w-[280px] md:w-auto">
         <div className="relative group">
           {/* Glow effect */}
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4169E1] via-purple-500 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
@@ -21,10 +21,8 @@ export default function Home() {
 
       <div className="relative flex flex-col md:flex-row min-h-screen w-full">
         {/* LEFT SIDE - SOFTWARE */}
-        <div className="flex-1 bg-[#4169E1] relative flex flex-col items-center pt-32 md:pt-20 md:justify-center p-6 md:p-8 text-white md:min-h-screen gap-4 md:gap-8">
-          <div className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-8 lg:mb-12 tracking-tight text-center">
-            Software
-          </div>
+        <div className="flex-1 bg-[#4169E1] relative flex flex-col items-center pt-52 pb-16 md:justify-center md:pt-0 p-6 md:p-8 text-white md:min-h-screen">
+          <div className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 tracking-tight">Software</div>
           
           {/* Software Clipart */}
           <div className="relative mb-4 md:mb-12 w-32 h-40 md:w-64 md:h-80">
@@ -40,14 +38,14 @@ export default function Home() {
           {/* Learn More Button */}
           <a
             href="/software"
-            className="px-8 py-2 md:py-3 bg-white text-[#4169E1] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl z-50 relative"
+            className="relative z-30 px-8 py-2 md:py-3 bg-white text-[#4169E1] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
           >
             Learn More
           </a>
         </div>
 
         {/* Logo - Moved to Center */}
-        <div className="absolute z-30 left-1/2 top-[45%] md:top-[53%] -translate-x-1/2 -translate-y-1/2">
+        <div className="relative z-50 -my-10 flex justify-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:my-0">
           <style>{`
             @keyframes zoomIn {
               0% { transform: scale(0) rotate(-15deg); opacity: 0; }
@@ -74,10 +72,8 @@ export default function Home() {
         </div>
 
         {/* RIGHT SIDE - AGRO-ALLIED */}
-        <div className="flex-1 bg-[#FFFDD0] relative flex flex-col items-center justify-center p-6 md:p-8 text-[#0A2540] md:min-h-screen">
-          <div className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-8 lg:mb-12 tracking-tight text-center">
-            Agro-allied
-          </div>
+        <div className="flex-1 bg-[#FFFDD0] relative flex flex-col items-center justify-center p-6 pt-16 md:p-8 text-[#0A2540] md:min-h-screen">
+          <div className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 tracking-tight">Agro-allied</div>
           
           {/* Agro Clipart */}
           <div className="relative mb-6 md:mb-12 w-32 h-40 md:w-64 md:h-80">
@@ -93,7 +89,7 @@ export default function Home() {
           {/* Learn More Button */}
           <a
             href="/agro-allied"
-            className="px-8 py-2 md:py-3 bg-white text-[#cccaa6] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl z-50 relative"
+            className="relative z-30 px-8 py-2 md:py-3 bg-white text-[#cccaa6] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
           >
             Learn More
           </a>
