@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -36,12 +37,12 @@ export default function Home() {
           </div>
 
           {/* Learn More Button */}
-          <a
-            href="/software"
+          <Link
+            href="/Software"
             className="relative z-30 px-8 py-2 md:py-3 bg-white text-[#4169E1] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
           >
             Learn More
-          </a>
+          </Link>
         </div>
 
         {/* Logo - Moved to Center */}
@@ -87,12 +88,12 @@ export default function Home() {
           </div>
 
           {/* Learn More Button */}
-          <a
-            href="/agro-allied"
+          <Link
+            href="/Agro-allied"
             className="relative z-30 px-8 py-2 md:py-3 bg-white text-[#cccaa6] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </main>
