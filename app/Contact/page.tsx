@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
@@ -114,6 +115,7 @@ export default function ContactPage() {
         </section>
 
       </main>
+      <Footer />
     </>
   );
 }
