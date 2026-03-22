@@ -19,8 +19,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
-import FloatingChatButton from "@/components/ui/floating-chat-button";
+// // import Footer from "@/components/Footer";
+// import FloatingChatButton from "@/components/ui/floating-chat-button";
 
 export default function AgroAlliedPage() {
   const [showButton, setShowButton] = useState(false);
@@ -61,40 +61,34 @@ export default function AgroAlliedPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-900/60 to-primary-700/80"></div>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-6 pt-24 pb-4 md:py-32 text-center">
-          <Badge className="mb-6 bg-accent text-green-900 italic">
-            Empowering Nigerian Farmers
-          </Badge>
+         
 
           <div className="mb-6 flex flex-col items-center">
 
             <img 
-              src="/images/Logo.jpg" 
+              src="/images/Fatamid.jpeg" 
               alt="Monarch FarmTech Logo" 
               className="w-22 h-22 md:w-22 md:h-22 rounded-full shadow-lg border-4 border-white/30 mb-4"
             />
             <h1 className="text-5xl md:text-5xl font-bold leading-tight drop-shadow-lg">
-              <span className="text-white">The Monarch</span>
+              <span className="text-white">FATAMID</span>
             </h1>
 
             <h1 className="text-5xl md:text-4xl font-bold leading-tight drop-shadow-lg">
-              <span className="text-green-600">FarmTech</span>
+              <span className="text-green-600">International Ltd</span>
             </h1>
             
           </div>
 
           
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 drop-shadow-md">
-            Connect directly with buyers, reduce middlemen, and grow your income with Nigeria&apos;s leading agritech marketplace.
+          Bridging the supply gap, empowering farmers, and connecting buyers across Nigeria&apos;s agricultural landscape.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
             
-            <Link href="/auth/signup">
-              <Button size="lg" className="bg-black border-1 border-white text-white hover:bg-transparent hover:text-white-900 font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
-               Get Started
-              </Button>
-            </Link>
+            
           </div>
         </div>
 
@@ -102,10 +96,10 @@ export default function AgroAlliedPage() {
         <section className="relative py-1 bg-primary-50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-2 text-primary-900">
-              Browse by Category
+              Categories
             </h2>
-            <p className="text-xl text-center mb-6">
-              Discover fresh produce and products directly from Nigerian farmers
+            <p className="text-xl text-center mb-6 text-yellow-100">
+              Discover good quality of produces directly from farm gates across Nigeria.
             </p>
             
 
@@ -162,7 +156,7 @@ export default function AgroAlliedPage() {
                 </TabsTrigger>
               </TabsList>
 
-              <TabsContent value="fruits-vegetables" className="mt-6">
+              <TabsContent value="fruits-vegetables" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Fruits & Vegetables</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -173,7 +167,7 @@ export default function AgroAlliedPage() {
                     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
                       <img src="/images/Tomatoes.jpg" alt="Tomatoes" className="w-full h-32 object-cover" />
                       <CardContent className="p-3">
-                        <h4 className="font-semibold text-sm">Tomatoes</h4>
+                        <h4 className="font-semibold text-sm text-red-600">Tomatoes</h4>
                       </CardContent>
                     </Card>
                     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
@@ -195,17 +189,17 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  {/* <div className="text-center mt-6">
                     <Link href="/categories/fruits-vegetables">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Fruits & Vegetables
                       </Button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
 
-              <TabsContent value="grains-cereals" className="mt-6">
+              <TabsContent value="grains-cereals" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Grains & Cereals</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -238,17 +232,17 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  {/* <div className="text-center mt-6">
                     <Link href="/categories/grains-cereals">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Grains & Cereals
                       </Button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
 
-              <TabsContent value="legumes-nuts" className="mt-6">
+              <TabsContent value="legumes-nuts" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Legumes & Nuts</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -281,17 +275,17 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  {/* <div className="text-center mt-6">
                     <Link href="/categories/legumes-nuts">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Legumes & Nuts
                       </Button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
 
-              <TabsContent value="root-tuber-crops" className="mt-6">
+              <TabsContent value="root-tuber-crops" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Root & Tuber Crops</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -324,17 +318,17 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  {/* <div className="text-center mt-6">
                     <Link href="/categories/root-tuber-crops">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Root & Tuber Crops
                       </Button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
 
-              <TabsContent value="livestock-products" className="mt-6">
+              <TabsContent value="livestock-products" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Livestock Products</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -367,17 +361,17 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  {/* <div className="text-center mt-6">
                     <Link href="/categories/livestock-products">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Livestock Products
                       </Button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
 
-              <TabsContent value="fish-seafood" className="mt-6">
+              <TabsContent value="fish-seafood" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Fish & Seafood</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -410,17 +404,18 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  {/* <div className="text-center mt-6">
                     <Link href="/categories/fish-seafood">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Fish & Seafood
                       </Button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
+              
 
-              <TabsContent value="others" className="mt-6">
+              <TabsContent value="others" className="mt-6 text-red-600">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
                   <h3 className="text-2xl font-semibold mb-4 text-primary-800">Others</h3>
                   <p className="text-lg text-gray-700 mb-8">
@@ -453,7 +448,7 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="text-center mt-6">
+                  /* <div className="text-center mt-6">
                     <Link href="/categories/others">
                       <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
                         View More Others
@@ -677,7 +672,7 @@ export default function AgroAlliedPage() {
 
      
      {/* <Footer /> */}
-      <FloatingChatButton />
+      {/* <FloatingChatButton /> */}
     </>
   );
 }
