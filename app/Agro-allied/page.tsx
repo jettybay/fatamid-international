@@ -19,7 +19,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import FloatingChatButton from "@/components/ui/floating-chat-button";
 
 export default function AgroAlliedPage() {
@@ -673,30 +673,10 @@ export default function AgroAlliedPage() {
         </div>
       </section>
 
-      {/* CTA Footer */}
-      <section className="py-20 bg-primary-900 text-green-900 text-center">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Farm?</h2>
-          <p className="text-xl mb-8">Join thousands of Nigerian farmers today.</p>
-          <Link href="/auth/signup">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
-              Get Started Now
-            </Button>
-          </Link>
-        </div>
-      </section>
+    
 
-      {/* Back to Top Button */}
-      {showButton && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-24 right-8 bg-primary-600 text-green-900 p-4 rounded-full shadow-lg hover:bg-primary-700 transition z-50"
-        >
-          <ArrowUp className="w-6 h-6 text-green-900" />
-        </button>
-      )}
-
-      <Footer />
+     
+     {/* <Footer /> */}
       <FloatingChatButton />
     </>
   );

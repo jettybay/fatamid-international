@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
@@ -21,7 +21,7 @@ export default function ContactPage() {
 
       <main className="bg-white text-gray-900 overflow-hidden">
         {/* CONTENT */}
-        <section className="py-16">
+        <section className="pt-32 pb-16">
           <div className="max-w-6xl mx-auto px-6">
             {/* CONTACT DETAILS */}
             <motion.div
@@ -37,7 +37,7 @@ export default function ContactPage() {
 
               <p className="text-lg max-w-2xl pb-8 text-green-700">
                 Reach out for agro-commodity enquiries, partnerships, sourcing, 
-                export assistance, or any other questions.
+                export assistance, or any other questions, IT solutions.
               </p>
 
               <div className="space-y-8">
@@ -115,7 +115,7 @@ export default function ContactPage() {
         </section>
 
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
