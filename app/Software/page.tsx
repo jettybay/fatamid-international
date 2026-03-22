@@ -1,13 +1,12 @@
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import Link from "next/link";
+import Navbar from '@/components/Navbar'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function SoftwarePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
 
-      {/* Hero Section */}
       <section className="pt-28 pb-16 bg-gradient-to-br from-[#0A2540] to-[#1e3a5f] text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -20,20 +19,17 @@ export default function SoftwarePage() {
         </div>
       </section>
 
-      {/* Placeholder Content – replace with real text later */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Image on left */}
           <div className="relative h-80 md:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/MuslimaDevs.png"   // ← using the same one from landing
+              src="/images/MuslimaDevs.png"
               alt="Software Development"
               fill
               className="object-contain bg-white" 
             />
           </div>
 
-          {/* Text on right */}
           <div>
             <h2 className="text-4xl font-bold text-[#0A2540] mb-6">
               What We Offer
@@ -63,8 +59,8 @@ export default function SoftwarePage() {
 
             <div className="mt-10">
               <Link
-                href="/contact"
-                className="inline-block px-10 py-4 bg-[#0A2540] text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition"
+                href="/Contact"
+                className="inline-block px-10 py-4 bg-[#0A2540] text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition-all duration-300"
               >
                 Get in Touch →
               </Link>
@@ -72,8 +68,6 @@ export default function SoftwarePage() {
           </div>
         </div>
       </section>
-
-      {/* You can add more sections: testimonials, tech stack, CTA, etc. */}
     </div>
-  );
+  )
 }

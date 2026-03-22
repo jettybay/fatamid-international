@@ -1,13 +1,12 @@
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import Link from "next/link";
+import Navbar from '@/components/Navbar'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function AgroAlliedPage() {
   return (
     <div className="min-h-screen bg-[#fafaf5]">
       <Navbar />
 
-      {/* Hero Section */}
       <section className="pt-28 pb-16 bg-gradient-to-br from-[#1a472a] to-[#2d5a3f] text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -19,10 +18,8 @@ export default function AgroAlliedPage() {
         </div>
       </section>
 
-      {/* Placeholder Content – replace with real text later */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Image on left */}
           <div className="relative h-80 md:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="/images/farmer.png"
@@ -32,7 +29,6 @@ export default function AgroAlliedPage() {
             />
           </div>
 
-          {/* Text on right */}
           <div>
             <h2 className="text-4xl font-bold text-[#1a472a] mb-6">
               Our Capabilities
@@ -62,8 +58,8 @@ export default function AgroAlliedPage() {
 
             <div className="mt-10">
               <Link
-                href="/contact"
-                className="inline-block px-10 py-4 bg-[#1a472a] text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition"
+                href="/Contact"
+                className="inline-block px-10 py-4 bg-[#1a472a] text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition-all duration-300"
               >
                 Partner With Us →
               </Link>
@@ -71,8 +67,6 @@ export default function AgroAlliedPage() {
           </div>
         </div>
       </section>
-
-      {/* You can add more sections: testimonials, tech stack, CTA, etc. */}
     </div>
-  );
+  )
 }
