@@ -23,7 +23,7 @@ export default function AboutAgroPage() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
-          <div className="relative h-80 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl order-2 md:order-1">
+          <div className="relative h-56 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl md:order-1">
             <Image
               src="/images/farmer.png"
               alt="Sustainable Agriculture"
@@ -33,7 +33,7 @@ export default function AboutAgroPage() {
           </div>
 
           {/* Content */}
-          <div className="md:pr-8 order-1 md:order-2">
+          <div className="md:pr-8 md:order-2">
             <h2 className="text-4xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-[#1a472a] via-green-700 to-emerald-800 bg-clip-text text-transparent drop-shadow-lg">
               Commodity Expertise
             </h2>
@@ -125,21 +125,21 @@ export default function AboutAgroPage() {
                 <div className="w-full h-full flex items-center justify-center text-2xl text-white">👨‍🌾</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Farmer Networks</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Direct partnerships with thousands of smallholder farmers</p>
+              <p className="text-lg text-gray-700 max-w-md mx-auto">Direct partnerships with smallholder farmers</p>
             </div>
             <div className="text-center group">
               <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-500 shadow-xl group-hover:scale-110 transition-all duration-300 border-4 border-[#FFFDD0]">
                 <div className="w-full h-full flex items-center justify-center text-2xl text-gray-800 font-bold">QC</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Quality Control</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Moisture, purity, aflatoxin, foreign material testing</p>
+              <p className="text-lg text-gray-700 max-w-md mx-auto">Moisture, purity, aflatoxin, material testing</p>
             </div>
             <div className="text-center group">
               <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-400 to-emerald-500 shadow-xl group-hover:scale-110 transition-all duration-300">
                 <div className="w-full h-full flex items-center justify-center text-2xl text-white">🚚</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Logistics</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Container stuffing, documentation, global shipping</p>
+              <p className="text-lg text-gray-700 max-w-md mx-auto">Container stuffing, global shipping</p>
             </div>
           </div>
         </div>
