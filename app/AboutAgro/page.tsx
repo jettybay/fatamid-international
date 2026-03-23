@@ -21,7 +21,7 @@ export default function AboutAgroPage() {
 
       {/* Main Content */}
       <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
           <div className="relative h-80 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl order-2 md:order-1">
             <Image
@@ -59,7 +59,7 @@ export default function AboutAgroPage() {
             To become Nigeria's premier agro-commodities aggregator and trusted global partner, delivering premium, sustainably sourced agricultural 
             products while empowering local farmers and bridging them to international markets.
             This version keeps it concise (one strong sentence), professional, and aligned with Fatamid International Ltd's focus on aggregation, export, quality, 
-            farmer support, and sustainability—without copying unrelated entities or industries. It positions the company aspiringly yet realistically for the agro sector.
+            farmer support, and sustainability without copying unrelated entities or industries. It positions the company aspiringly yet realistically for the agro sector.
             If you'd like variations (e.g., shorter, more emphasis on sustainability/farmers/exports, or adding "vision" too), just let me know!
            </p> 
            </div>
