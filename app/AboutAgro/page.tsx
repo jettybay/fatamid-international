@@ -8,12 +8,12 @@ export default function AboutAgroPage() {
       <Navbar />
 
       {/* Hero Section - Agro Theme */}
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl">
+      <section className="pt-24 pb-12 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
             About Our Agro-Allied Division
           </h1>
-          <p className="text-xl md:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed">
             Exporting Nigeria&apos;s finest agricultural commodities to global markets through sustainable practices.
           </p>
         </div>
@@ -34,13 +34,39 @@ export default function AboutAgroPage() {
 
           {/* Content */}
           <div className="md:pr-8 order-1 md:order-2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-[#1a472a] via-green-700 to-emerald-800 bg-clip-text text-transparent drop-shadow-lg">
+            <h2 className="text-4xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-[#1a472a] via-green-700 to-emerald-800 bg-clip-text text-transparent drop-shadow-lg">
               Commodity Expertise
             </h2>
-            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
-              Specializing in premium Nigerian agricultural exports with strict quality control and sustainable sourcing.
+            <p className="text-lg text-gray-800 mb-8 leading-relaxed">
+              Fatamid International Ltd specializing in premium Nigerian agricultural exports with strict quality control and sustainable sourcing.
+              <br /><br />
+              We are agro-commodities aggregator in Nigeria, specializing in the sourcing, aggregation, 
+              processing,and export of high-quality agricultural products.
+              The company maintains strong partnerships with farmers across key producing regions, including Oyo, Kogi, Kano, Katsina, Niger, 
+              and other states, to ensure reliable supply of premium commodities such as cashew nuts, soybeans, sheanuts, locust beans, 
+              sesame seeds, hibiscus, maize, and other cash crops, all through the season.
+              <br/><br/>
+              Through direct engagement with farming communities, Fatamid provides quality agri-inputs, off-take arrangements, 
+              and enhancement techniques and sustainable practices including specialized guidance for women in agric produce collection 
+              and primary processing to support improved productivity and livelihoods while meeting international quality standards.
             </p>
             
+             <div className="md:pr-8 order-1 md:order-2">
+            <h2 className="text-4xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-[#1a472a] via-green-700 to-emerald-800 bg-clip-text text-transparent drop-shadow-lg">
+              Our Mission
+            </h2>
+           <p className="text-lg text-gray-800 mb-8 leading-relaxed">
+            To become Nigeria's premier agro-commodities aggregator and trusted global partner, delivering premium, sustainably sourced agricultural 
+            products while empowering local farmers and bridging them to international markets.
+            This version keeps it concise (one strong sentence), professional, and aligned with Fatamid International Ltd's focus on aggregation, export, quality, 
+            farmer support, and sustainability—without copying unrelated entities or industries. It positions the company aspiringly yet realistically for the agro sector.
+            If you'd like variations (e.g., shorter, more emphasis on sustainability/farmers/exports, or adding "vision" too), just let me know!
+           </p> 
+           </div>
+
+
+
+
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="space-y-4">
                 <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">

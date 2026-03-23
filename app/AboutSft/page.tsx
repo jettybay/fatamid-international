@@ -8,12 +8,12 @@ export default function AboutSftPage() {
       <Navbar />
 
       {/* Hero Section - Software Theme */}
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#4169E1] via-blue-600 to-blue-800 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+      <section className="pt-24 pb-12 bg-gradient-to-br from-[#4169E1] via-blue-600 to-blue-800 text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg">
             About Our Software Division
           </h1>
-          <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed">
             Pioneering digital transformation through cutting-edge software solutions, robotics, and AI innovation.
           </p>
         </div>
