@@ -1,13 +1,10 @@
-# Fixing App Loading Errors - TypeScript Syntax Issues
+# TODO: Hero Section Sliding Background
 
-## Plan Steps:
-- [x] Step 1: Delete empty `components/ui/buttom.tsx`
-- [x] Step 2: Create proper `components/Footer.tsx`
-- [x] Step 3: Check and fix other open UI tabs if empty/broken (badge.tsx, card.tsx, avatar.tsx, carousel.tsx)
-- [x] Step 4: Verify imports and run `npm run dev` (server now on port 3002)
-- [ ] Step 5: Install missing dependencies if needed (shadcn/ui deps like class-variance-authority, radix-ui)
+## Steps:
+- [ ] Step 1: Create TODO.md with plan steps (current)
+- [ ] Step 2: Edit app/page.tsx to implement sliding background using CSS keyframes
+- [ ] Step 3: Update TODO.md after edit
+- [ ] Step 4: Test by reloading the page (npm run dev if needed)
+- [ ] Step 5: Complete task
 
-**Current Progress:** Steps 1-4 complete. Dev server should now run without TS errors. Checking for missing deps next."
-
-
-
+## Status: Step 2 complete - app/page.tsx edited with sliding background.\n\n- [x] Step 1: Create TODO.md with plan steps (current)\n- [x] Step 2: Edit app/page.tsx to implement sliding background using CSS transitions and JS timer\n- [ ] Step 3: Update TODO.md after edit\n- [ ] Step 4: Test by reloading the page (npm run dev if needed)\n- [ ] Step 5: Complete task

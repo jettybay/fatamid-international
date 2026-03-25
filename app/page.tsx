@@ -21,7 +21,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
-  const [showButton, setShowButton] = useState(false);
+const [showButton, setShowButton] = useState(false);
+
+  const images = [
+    '/images/cashewLand.jpg',
+    '/images/maizeLand.avif',
+    '/images/sesameLand.jpg'
+  ];
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +47,13 @@ export default function Home() {
     }
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgIndex((prev) => (prev + 1) % 3);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -47,15 +61,31 @@ export default function Home() {
       {/* Hero Section */}
       <section 
         className="relative text-white overflow-hidden"
-        style={{
-          backgroundColor: '#1a5d1a',
-          backgroundImage: 'url("/images/cashewLand.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+style={{
           minHeight: '780px'
         }}
       >
+        {/* Sliding background with cashewLand.jpg, maizeLand.avif, sesameLand.jpg */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div 
+            className="flex h-full w-[300%] transition-transform duration-[6000ms] ease-linear"
+            style={{ transform: `translateX(calc(-${currentBgIndex} * 33.333%))` }}
+          >
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-1/3 h-full"
+                style={{
+                  backgroundColor: '#1a5d1a',
+                  backgroundImage: `url(${image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            ))}
+          </div>
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-900/60 to-primary-700/80"></div>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-6 pt-24 pb-4 md:py-32 text-center">

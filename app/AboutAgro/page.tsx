@@ -11,7 +11,7 @@ export default function AboutAgroPage() {
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
-            About Our Agro-Allied
+            About the Agro-Allied
           </h1>
           <p className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed">
             Exporting Nigeria&apos;s finest agricultural commodities to global markets through sustainable practices.
