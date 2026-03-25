@@ -11,7 +11,7 @@ export default function AboutAgroPage() {
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
-            About Our Agro-Allied Division
+            About Our Agro-Allied
           </h1>
           <p className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed">
             Exporting Nigeria&apos;s finest agricultural commodities to global markets through sustainable practices.
@@ -20,10 +20,10 @@ export default function AboutAgroPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
-          <div className="relative h-56 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl md:order-1">
+          <div className="relative h-95 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl md:order-1">
             <Image
               src="/images/farmer.png"
               alt="Sustainable Agriculture"

@@ -37,7 +37,7 @@ export default function ContactPage() {
 
               <p className="text-lg max-w-2xl pb-8 text-green-700">
                 Reach out for agro-commodity enquiries, partnerships, sourcing, 
-                export assistance, or any other questions, IT solutions.
+                export assistance, or any other questions.
               </p>
 
               <div className="space-y-8">

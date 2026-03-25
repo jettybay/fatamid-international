@@ -1,101 +1,181 @@
-import Image from 'next/image';
-import Link from 'next/link';
+'use client';
+
+import { Leaf, Tractor, Users, TrendingUp, Smartphone, Shield, ArrowUp, Wheat, Beef, Shirt, Droplet, Factory, Flower2 } from "lucide-react";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== 'undefined' && window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll();
+      
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
-    <main className="min-h-screen relative bg-[#4169E1] font-sans">
-      {/* Welcome Box - Moved to Top */}
-      <div className="absolute z-50 top-10 left-1/2 -translate-x-1/2 md:top-8 w-[80%] max-w-[280px] md:w-auto">
-        <div className="relative group">
-          {/* Glow effect */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#4169E1] via-purple-500 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-          <div className="relative bg-white rounded-2xl shadow-2xl px-6 md:px-8 py-6 md:py-8 text-center transition-all duration-300 transform group-hover:scale-[1.02]">
-            <h2 className="font-bold leading-tight">
-              <span className="block text-gray-400 text-xs md:text-sm uppercase tracking-[0.2em] mb-2 md:mb-3">Welcome to</span>
-              <span className="block text-xl md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#0A2540] via-[#4169E1] to-[#0A2540] font-extrabold">
-                Fatamid International Ltd
-              </span>
+    <>
+      <Navbar />
+
+      {/* Hero Section */}
+      <section 
+        className="relative text-white overflow-hidden"
+        style={{
+          backgroundColor: '#1a5d1a',
+          backgroundImage: 'url("/images/cashewLand.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '780px'
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-900/60 to-primary-700/80"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative container mx-auto px-6 pt-24 pb-4 md:py-32 text-center">
+          <div className="mb-6 flex flex-col items-center">
+            
+            <h1 className="text-5xl md:text-5xl font-bold leading-tight drop-shadow-lg">
+              <span className="text-white">FATAMID</span>
+            </h1>
+            <h1 className="text-5xl md:text-4xl font-bold leading-tight drop-shadow-lg">
+              <span className="text-green-600">International Ltd</span>
+            </h1>
+          </div>
+          <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 drop-shadow-md">
+            Bridging the supply gap, empowering farmers, and connecting buyers across Nigeria&apos;s agricultural landscape.
+          </p>
+        </div>
+
+        {/* Tabs Section inside Hero */}
+        <section className="relative py-1 bg-primary-50">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl font-bold text-center mb-2 text-primary-900">
+              Categories
             </h2>
+            <p className="text-xl text-center mb-6 text-yellow-100">
+              Discover good quality of produces directly from farm gates across Nigeria.
+            </p>
+
+            <Tabs defaultValue="fruits-vegetables" className="w-full max-w-6xl mx-auto">
+              <TabsList className="flex h-auto justify-start gap-2 md:grid md:grid-cols-7 w-full mb-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1 overflow-x-auto md:overflow-visible no-scrollbar z-10">
+                <TabsTrigger 
+                  value="fruits-vegetables" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Flower2 className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Fruits & Vegetables</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="grains-cereals" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Wheat className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Grains & Cereals</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="legumes-nuts" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Leaf className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Legumes & Nuts</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="root-tuber-crops" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Factory className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Root & Tuber Crops</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="livestock-products" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Beef className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Livestock Products</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="fish-seafood" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Droplet className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Fish & Seafood</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="others" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Shirt className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Others</span>
+                </TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="fruits-vegetables" className="mt-6 text-red-600">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
+                  <h3 className="text-2xl font-semibold mb-4 text-primary-800">Fruits & Vegetables</h3>
+                  <p className="text-lg text-gray-700 mb-8">
+                    Fresh tomatoes, onions, peppers, mint leaf, bananas, oranges, mangoes, and seasonal vegetables.
+                  </p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                      <img src="/images/Tomatoes.jpg" alt="Tomatoes" className="w-full h-32 object-cover" />
+                      <CardContent className="p-3">
+                        <h4 className="font-semibold text-sm text-red-600">Tomatoes</h4>
+                      </CardContent>
+                    </Card>
+                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                      <img src="/images/Onions.jpg" alt="Onions" className="w-full h-32 object-cover" />
+                      <CardContent className="p-3">
+                        <h4 className="font-semibold text-sm">Onions</h4>
+                      </CardContent>
+                    </Card>
+                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                      <img src="/images/Peppers.jpg" alt="Peppers" className="w-full h-32 object-cover" />
+                      <CardContent className="p-3">
+                        <h4 className="font-semibold text-sm">Peppers</h4>
+                      </CardContent>
+                    </Card>
+                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                      <img src="/images/Mint leaf.jpg" alt="Mint leaf" className="w-full h-32 object-cover" />
+                      <CardContent className="p-3">
+                        <h4 className="font-semibold text-sm">Mint leaf</h4>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <div className="relative flex flex-col md:flex-row min-h-screen w-full">
-        {/* LEFT SIDE - SOFTWARE */}
-        <div className="flex-1 bg-[#4169E1] relative flex flex-col items-center pt-52 pb-16 md:justify-center md:pt-0 p-6 md:p-8 text-white md:min-h-screen">
-          <div className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 tracking-tight">Software</div>
-          
-          {/* Software Clipart */}
-          <div className="relative mb-4 md:mb-12 w-32 h-40 md:w-64 md:h-80">
-            <Image
-              src="/images/MuslimaDevs.png"
-              alt="Software"
-              fill
-              className="object-contain drop-shadow-xl"
-              priority
-            />
-          </div>
-
-          {/* Learn More Button */}
-          <Link
-            href="/Software"
-            className="relative z-30 px-8 py-2 md:py-3 bg-white text-[#4169E1] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
-          >
-            Learn More
-          </Link>
-        </div>
-
-        {/* Logo - Moved to Center */}
-        <div className="relative z-50 -my-10 flex justify-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:my-0">
-          <style>{`
-            @keyframes zoomIn {
-              0% { transform: scale(0) rotate(-15deg); opacity: 0; }
-              80% { transform: scale(1.1); }
-              100% { transform: scale(1) rotate(0deg); opacity: 1; }
-            }
-            @keyframes float {
-              0%, 100% { transform: translateY(0); }
-              50% { transform: translateY(-10px); }
-            }
-            .logo-entrance {
-              animation: zoomIn 10s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, float 5s ease-in-out infinite 3s;
-            }
-          `}</style>
-          <div className="logo-entrance relative w-20 h-20 md:w-24 md:h-24 rounded-full shadow-2xl border-4 border-white">
-            <Image
-              src="/images/Fatamid.jpeg"
-              alt="Fatamid Logo"
-              fill
-              className="object-cover rounded-full"
-              priority
-            />
-          </div>
-        </div>
-
-        {/* RIGHT SIDE - AGRO-ALLIED */}
-        <div className="flex-1 bg-[#FFFDD0] relative flex flex-col items-center justify-center p-6 pt-16 md:p-8 text-[#0A2540] md:min-h-screen">
-          <div className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 tracking-tight">Agro-allied</div>
-          
-          {/* Agro Clipart */}
-          <div className="relative mb-6 md:mb-12 w-32 h-40 md:w-64 md:h-80">
-            <Image
-              src="/images/farmer.png"
-              alt="Agro-allied"
-              fill
-              className="object-contain drop-shadow-xl"
-              priority
-            />
-          </div>
-
-          {/* Learn More Button */}
-          <Link
-            href="/Agro-allied"
-            className="relative z-30 px-8 py-2 md:py-3 bg-white text-[#cccaa6] rounded-full font-bold text-base md:text-lg tracking-wide hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
-          >
-            Learn More
-          </Link>
-        </div>
-      </div>
-    </main>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+      </section>
+    </>
   );
 }

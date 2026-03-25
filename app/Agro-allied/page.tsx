@@ -448,13 +448,6 @@ export default function AgroAlliedPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  /* <div className="text-center mt-6">
-                    <Link href="/categories/others">
-                      <Button className="bg-primary-600 hover:bg-primary-700 transition-colors duration-200">
-                        View More Others
-                      </Button>
-                    </Link>
-                  </div>
                 </div>
               </TabsContent>
             </Tabs>
@@ -463,12 +456,6 @@ export default function AgroAlliedPage() {
 
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
       </section>
-
-     
-
-     {/* <Footer /> */}
-      {/* <FloatingChatButton /> */}
     </>
   );
 }
-
