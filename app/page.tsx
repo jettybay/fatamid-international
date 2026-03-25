@@ -130,10 +130,8 @@ style={{
                   <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Legumes & Nuts</span>
                 </TabsTrigger>
               </TabsList>
-            </Tabs>
-          </div>
-          <section className="relative">
-            <TabsContent value="grains-cereals" className="w-full max-w-6xl mx-auto">
+
+            <TabsContent value="grains-cereals" className="w-full mt-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Card 1 */}
                 <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -171,7 +169,15 @@ style={{
                   </CardContent>
                 </Card>
               </div>
-          </section>
+            </TabsContent>
+
+            <TabsContent value="legumes-nuts" className="w-full mt-8">
+              <div className="text-center py-12 text-gray-500 bg-white/50 rounded-lg border border-dashed border-gray-300">
+                Content for Legumes & Nuts will be displayed here.
+              </div>
+            </TabsContent>
+          </Tabs>
+          </div>
         </section>
 
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
