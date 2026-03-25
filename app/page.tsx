@@ -127,7 +127,7 @@ style={{
                   className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
                 >
                   <Leaf className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Legumes & Nuts</span>
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Nuts & Leafs</span>
                 </TabsTrigger>
               </TabsList>
 
@@ -198,6 +198,19 @@ style={{
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Sourced from the arid regions of Northern Nigeria, our hibiscus is carefully sun-dried to preserve its deep red color and tart flavor profile.</p>
+                    <Button variant="outline" size="sm" className="w-full">View Details</Button>
+                  </CardContent>
+                </Card>
+
+                {/* Card 3 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/Sheanut.jpg" alt="Shea nuts" className="w-full h-48 object-cover" />
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Shea nuts</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">High-grade organic shea nuts for premium butter production.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Our shea nuts are wild-harvested and sun-dried to maintain high oil content and purity, perfect for the cosmetic and food industries.</p>
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
