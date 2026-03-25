@@ -114,7 +114,7 @@ style={{
             </p>
 
             <Tabs defaultValue="grains-cereals" className="w-full max-w-6xl mx-auto">
-              <TabsList className="flex h-auto justify-start gap-2 md:grid md:grid-cols-2 w-full mb-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1 overflow-x-auto md:overflow-visible no-scrollbar z-10">
+              <TabsList className="grid grid-cols-2 h-auto w-full gap-2 mb-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1 z-10">
                 <TabsTrigger 
                   value="grains-cereals" 
                   className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
