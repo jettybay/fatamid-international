@@ -1,6 +1,6 @@
 'use client';
 
-import { Leaf, Tractor, Users, TrendingUp, Smartphone, Shield, ArrowUp, Wheat, Beef, Shirt, Droplet, Factory, Flower2 } from "lucide-react";
+import { Leaf, Tractor, Users, TrendingUp, Smartphone, Shield, ArrowUp, Wheat } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -113,15 +113,8 @@ style={{
               Discover good quality of produces directly from farm gates across Nigeria.
             </p>
 
-            <Tabs defaultValue="fruits-vegetables" className="w-full max-w-6xl mx-auto">
-              <TabsList className="flex h-auto justify-start gap-2 md:grid md:grid-cols-7 w-full mb-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1 overflow-x-auto md:overflow-visible no-scrollbar z-10">
-                <TabsTrigger 
-                  value="fruits-vegetables" 
-                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
-                >
-                  <Flower2 className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Fruits & Vegetables</span>
-                </TabsTrigger>
+            <Tabs defaultValue="grains-cereals" className="w-full max-w-6xl mx-auto">
+              <TabsList className="flex h-auto justify-start gap-2 md:grid md:grid-cols-2 w-full mb-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1 overflow-x-auto md:overflow-visible no-scrollbar z-10">
                 <TabsTrigger 
                   value="grains-cereals" 
                   className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
@@ -136,72 +129,49 @@ style={{
                   <Leaf className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
                   <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Legumes & Nuts</span>
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="root-tuber-crops" 
-                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
-                >
-                  <Factory className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Root & Tuber Crops</span>
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="livestock-products" 
-                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
-                >
-                  <Beef className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Livestock Products</span>
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="fish-seafood" 
-                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
-                >
-                  <Droplet className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Fish & Seafood</span>
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="others" 
-                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
-                >
-                  <Shirt className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Others</span>
-                </TabsTrigger>
               </TabsList>
-
-              <TabsContent value="fruits-vegetables" className="mt-6 text-red-600">
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20">
-                  <h3 className="text-2xl font-semibold mb-4 text-primary-800">Fruits & Vegetables</h3>
-                  <p className="text-lg text-gray-700 mb-8">
-                    Fresh tomatoes, onions, peppers, mint leaf, bananas, oranges, mangoes, and seasonal vegetables.
-                  </p>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
-                      <img src="/images/Tomatoes.jpg" alt="Tomatoes" className="w-full h-32 object-cover" />
-                      <CardContent className="p-3">
-                        <h4 className="font-semibold text-sm text-red-600">Tomatoes</h4>
-                      </CardContent>
-                    </Card>
-                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
-                      <img src="/images/Onions.jpg" alt="Onions" className="w-full h-32 object-cover" />
-                      <CardContent className="p-3">
-                        <h4 className="font-semibold text-sm">Onions</h4>
-                      </CardContent>
-                    </Card>
-                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
-                      <img src="/images/Peppers.jpg" alt="Peppers" className="w-full h-32 object-cover" />
-                      <CardContent className="p-3">
-                        <h4 className="font-semibold text-sm">Peppers</h4>
-                      </CardContent>
-                    </Card>
-                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200">
-                      <img src="/images/Mint leaf.jpg" alt="Mint leaf" className="w-full h-32 object-cover" />
-                      <CardContent className="p-3">
-                        <h4 className="font-semibold text-sm">Mint leaf</h4>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </TabsContent>
             </Tabs>
           </div>
+          <section className="relative">
+            <TabsContent value="grains-cereals" className="w-full max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Card 1 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Maize</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">High-quality maize directly from Nigerian farms.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Our maize is sourced from trusted farmers across Nigeria, ensuring freshness and quality for your needs.</p>
+                    <Button variant="outline" size="sm" className="w-full">View Details</Button>
+                  </CardContent>
+                </Card>
+
+                {/* Card 2 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Sorghum</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Premium sorghum for diverse applications.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Our sorghum is cultivated by experienced farmers, ensuring top-notch quality for your culinary and industrial needs.</p>
+                    <Button variant="outline" size="sm" className="w-full">View Details</Button>
+                  </CardContent>
+                </Card>
+
+                {/* Card 3 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Millet</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Nutritious millet for health-conscious consumers.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Our millet is grown with care by dedicated farmers, providing you with a nutritious and versatile grain for your meals.</p>
+                    <Button variant="outline" size="sm" className="w-full">View Details</Button>
+                  </CardContent>
+                </Card>
+              </div>
+          </section>
         </section>
 
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
