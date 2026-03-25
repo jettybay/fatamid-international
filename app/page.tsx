@@ -175,8 +175,32 @@ style={{
             </TabsContent>
 
             <TabsContent value="legumes-nuts" className="w-full mt-8">
-              <div className="text-center py-12 text-gray-500 bg-white/50 rounded-lg border border-dashed border-gray-300">
-                Content for Legumes & Nuts will be displayed here.
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Card 1 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/Cashews.webp" alt="Cashew nuts" className="w-full h-48 object-cover" />
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Cashew nuts</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Premium raw cashew nuts from Nigeria&apos;s top producing regions.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Our cashew nuts are carefully harvested and sorted to ensure high out-turn quality (KOR) for global export markets.</p>
+                    <Button variant="outline" size="sm" className="w-full">View Details</Button>
+                  </CardContent>
+                </Card>
+
+                {/* Card 2 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/Hisbiscus leaves.jpeg" alt="Hibiscus leaves" className="w-full h-48 object-cover" />
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Hibiscus leaves</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">High-quality dried hibiscus flowers for teas and industrial use.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Sourced from the arid regions of Northern Nigeria, our hibiscus is carefully sun-dried to preserve its deep red color and tart flavor profile.</p>
+                    <Button variant="outline" size="sm" className="w-full">View Details</Button>
+                  </CardContent>
+                </Card>
               </div>
             </TabsContent>
           </Tabs>
