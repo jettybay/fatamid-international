@@ -50,7 +50,7 @@ const [showButton, setShowButton] = useState(false);
   useEffect(() => {
       const interval = setInterval(() => {
       setCurrentBgIndex((prev) => (prev + 1) % 3);
-    }, 2500);
+    }, 3500);
     return () => clearInterval(interval);
   }, []);
 
@@ -68,7 +68,7 @@ style={{
         {/* Sliding background with cashewLand.jpg, maizeLand.avif, sesameLand.jpg */}
         <div className="absolute inset-0 overflow-hidden">
           <div 
-            className="flex h-full w-[300%] transition-transform duration-[2500ms] ease-linear"
+            className="flex h-full w-[300%] transition-transform duration-[1000ms] ease-in-out"
             style={{ transform: `translateX(calc(-${currentBgIndex} * 33.333%))` }}
           >
             {images.map((image, index) => (
