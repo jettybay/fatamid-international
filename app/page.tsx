@@ -134,7 +134,8 @@ style={{
             <TabsContent value="grains-cereals" className="w-full mt-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Card 1 */}
-                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/Maize.jpg" alt="Maize" className="w-full h-48 object-cover" />
                   <CardHeader>
                     <CardTitle className="text-lg font-semibold text-primary-900">Maize</CardTitle>
                     <CardDescription className="text-sm text-gray-600">High-quality maize directly from Nigerian farms.</CardDescription>
@@ -146,25 +147,27 @@ style={{
                 </Card>
 
                 {/* Card 2 */}
-                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/soyabean.jpg" alt="Soya grain" className="w-full h-48 object-cover" />
                   <CardHeader>
-                    <CardTitle className="text-lg font-semibold text-primary-900">Sorghum</CardTitle>
-                    <CardDescription className="text-sm text-gray-600">Premium sorghum for diverse applications.</CardDescription>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Soya grain</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Premium soya grains for industrial and nutritional applications.</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-700 mb-4">Our sorghum is cultivated by experienced farmers, ensuring top-notch quality for your culinary and industrial needs.</p>
+                    <p className="text-sm text-gray-700 mb-4">Our soya grains are cultivated by experienced farmers, ensuring top-notch quality for oil production and high-protein feed.</p>
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
 
                 {/* Card 3 */}
-                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/Sesame.png" alt="Sesame seed" className="w-full h-48 object-cover" />
                   <CardHeader>
-                    <CardTitle className="text-lg font-semibold text-primary-900">Millet</CardTitle>
-                    <CardDescription className="text-sm text-gray-600">Nutritious millet for health-conscious consumers.</CardDescription>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Sesame seed</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Clean and high-oil content sesame seeds for global markets.</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-700 mb-4">Our millet is grown with care by dedicated farmers, providing you with a nutritious and versatile grain for your meals.</p>
+                    <p className="text-sm text-gray-700 mb-4">Our sesame seeds are grown with care, providing you with nutritious and high-quality produce for your export and local needs.</p>
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
