@@ -83,7 +83,7 @@ style={{
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-900/60 to-primary-700/80"></div>
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative container mx-auto px-6 pt-24 pb-4 md:py-32 text-center">
+        <div className="relative container mx-auto px-6 pt-24 pb-4 md:pt-32 md:pb-12 text-center">
           <div className="mb-6 flex flex-col items-center">
             
             <h1 className="text-5xl md:text-5xl font-bold leading-tight drop-shadow-lg">
@@ -93,13 +93,13 @@ style={{
               <span className="text-green-600">International Ltd</span>
             </h1>
           </div>
-          <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 drop-shadow-md">
+          <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto opacity-90 drop-shadow-md">
             Bridging the supply gap, empowering farmers, and connecting buyers across Nigeria&apos;s agricultural landscape.
           </p>
         </div>
 
         {/* Tabs Section inside Hero */}
-        <section className="relative py-12 pb-20 bg-primary-50">
+        <section className="relative pt-8 pb-20 bg-primary-50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-2 text-primary-900">
               Categories
