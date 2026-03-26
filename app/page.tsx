@@ -1,7 +1,6 @@
 'use client';
 
-import { Leaf, Tractor, Users, TrendingUp, Smartphone, Shield, ArrowUp, Wheat } from "lucide-react";
-import Link from "next/link";
+import { Leaf, Wheat } from "lucide-react";
 import { useState, useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -12,10 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Navbar from "@/components/Navbar";
@@ -24,9 +19,9 @@ export default function Home() {
 const [showButton, setShowButton] = useState(false);
 
   const images = [
-    '/images/cashewLand.jpg',
+    '/images/cashewLand.PNG',
     '/images/maizeLand.avif',
-    '/images/sesameLand.jpg'
+    '/images/SoyaLand.jpg'
   ];
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
 

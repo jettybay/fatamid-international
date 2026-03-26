@@ -25,7 +25,7 @@ export default function AboutAgroPage() {
           {/* Image */}
           <div className="relative h-95 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl md:order-1">
             <Image
-              src="/images/farmer.png"
+              src="/images/farmer.jpg"
               alt="Sustainable Agriculture"
               fill
               className="object-cover object-center"
@@ -139,7 +139,7 @@ export default function AboutAgroPage() {
                 <div className="w-full h-full flex items-center justify-center text-2xl text-white">🚚</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Logistics</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Container stuffing, global shipping</p>
+              <p className="text-lg text-gray-700 max-w-md mx-auto">Haulage, transportation</p>
             </div>
           </div>
         </div>
