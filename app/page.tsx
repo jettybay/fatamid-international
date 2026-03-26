@@ -99,7 +99,7 @@ style={{
         </div>
 
         {/* Tabs Section inside Hero */}
-        <section className="relative py-1 bg-primary-50">
+        <section className="relative py-12 pb-20 bg-primary-50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-2 text-primary-900">
               Categories
@@ -217,8 +217,6 @@ style={{
           </Tabs>
           </div>
         </section>
-
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
       </section>
     </>
   );
