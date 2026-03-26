@@ -4,23 +4,39 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function AboutAgroPage() {
   const [showPartnershipModal, setShowPartnershipModal] = useState(false);
   const [showLocalPartnershipModal, setShowLocalPartnershipModal] = useState(false);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#fafaf5] to-emerald-50">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="min-h-screen bg-gradient-to-br from-[#fafaf5] to-emerald-50"
+    >
       <Navbar />
 
       {/* Hero Section - Agro Theme */}
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
+          <motion.h1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-2xl"
+          >
             The Commodities
-          </h1>
-          <p className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed"
+          >
             Exporting Nigeria&apos;s finest agricultural commodities to global markets through sustainable practices.
-          </p>
+          </motion.p>
         </div>
       </section>
 
@@ -28,17 +44,29 @@ export default function AboutAgroPage() {
       <section className="py-10 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
-          <div className="relative h-95 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl md:order-1">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative h-95 md:h-[480px] rounded-3xl overflow-hidden shadow-2xl md:order-1"
+          >
             <Image
               src="/images/farmer.jpg"
               alt="Sustainable Agriculture"
               fill
               className="object-cover object-center"
             />
-          </div>
+          </motion.div>
 
           {/* Content */}
-          <div className="md:pr-8 md:order-2">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="md:pr-8 md:order-2"
+          >
             <h2 className="text-4xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-[#1a472a] via-green-700 to-emerald-800 bg-clip-text text-transparent drop-shadow-lg">
               Commodity Expertise
             </h2>
@@ -108,38 +136,62 @@ export default function AboutAgroPage() {
               Partner With Us
               <span>🌍</span>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Capabilities Section */}
       <section className="py-20 bg-gradient-to-t from-emerald-50 to-[#fafaf5]">
         <div className="max-w-6xl mx-auto px-6">
-          <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 bg-gradient-to-r from-[#1a472a] to-green-800 bg-clip-text text-transparent">
+          <motion.h3 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 bg-gradient-to-r from-[#1a472a] to-green-800 bg-clip-text text-transparent"
+          >
             Our Agricultural Capabilities
-          </h3>
+          </motion.h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center group">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-center group"
+            >
               <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 shadow-xl group-hover:scale-110 transition-all duration-300">
                 <div className="w-full h-full flex items-center justify-center text-2xl text-white">👨‍🌾</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Farmer Networks</h4>
               <p className="text-lg text-gray-700 max-w-md mx-auto">Direct partnerships with smallholder farmers</p>
-            </div>
-            <div className="text-center group">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center group"
+            >
               <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-500 shadow-xl group-hover:scale-110 transition-all duration-300 border-4 border-[#FFFDD0]">
                 <div className="w-full h-full flex items-center justify-center text-2xl text-gray-800 font-bold">QC</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Quality Control</h4>
               <p className="text-lg text-gray-700 max-w-md mx-auto">Moisture, purity, aflatoxin, material testing</p>
-            </div>
-            <div className="text-center group">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-center group"
+            >
               <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-400 to-emerald-500 shadow-xl group-hover:scale-110 transition-all duration-300">
                 <div className="w-full h-full flex items-center justify-center text-2xl text-white">🚚</div>
               </div>
               <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Logistics</h4>
               <p className="text-lg text-gray-700 max-w-md mx-auto">Haulage, transportation</p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -209,6 +261,6 @@ export default function AboutAgroPage() {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }

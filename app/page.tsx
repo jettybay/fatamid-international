@@ -2,6 +2,7 @@
 
 import { Leaf, Wheat } from "lucide-react";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -50,7 +51,11 @@ const [showButton, setShowButton] = useState(false);
   }, []);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <Navbar />
 
       {/* Hero Section */}
@@ -84,7 +89,12 @@ style={{
         <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-900/60 to-primary-700/80"></div>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-6 pt-24 pb-4 md:pt-32 md:pb-12 text-center">
-          <div className="mb-6 flex flex-col items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-6 flex flex-col items-center"
+          >
             
             <h1 className="text-5xl md:text-5xl font-bold leading-tight drop-shadow-lg">
               <span className="text-white">FATAMID</span>
@@ -92,14 +102,25 @@ style={{
             <h1 className="text-5xl md:text-4xl font-bold leading-tight drop-shadow-lg">
               <span className="text-green-600">International Ltd</span>
             </h1>
-          </div>
-          <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto opacity-90 drop-shadow-md">
+          </motion.div>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto opacity-90 drop-shadow-md"
+          >
             Bridging the supply gap, empowering farmers, and connecting buyers across Nigeria&apos;s agricultural landscape.
-          </p>
+          </motion.p>
         </div>
 
         {/* Tabs Section inside Hero */}
-        <section className="relative pt-8 pb-20 bg-primary-50">
+        <motion.section 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="relative pt-8 pb-20 bg-primary-50"
+        >
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-2 text-primary-900">
               Categories
@@ -127,7 +148,12 @@ style={{
               </TabsList>
 
             <TabsContent value="grains-cereals" className="w-full mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+              >
                 {/* Card 1 */}
                 <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
                   <img src="/images/Maize.jpg" alt="Maize" className="w-full h-48 object-cover" />
@@ -168,11 +194,16 @@ style={{
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
-              </div>
+              </motion.div>
             </TabsContent>
 
             <TabsContent value="legumes-nuts" className="w-full mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+              >
                 {/* Card 1 */}
                 <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
                   <img src="/images/Cashews.jpeg" alt="Cashew nuts" className="w-full h-48 object-cover" />
@@ -212,12 +243,12 @@ style={{
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
-              </div>
+              </motion.div>
             </TabsContent>
           </Tabs>
           </div>
-        </section>
+        </motion.section>
       </section>
-    </>
+    </motion.div>
   );
 }
