@@ -1,8 +1,12 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function AboutAgroPage() {
+  const [showPartnershipModal, setShowPartnershipModal] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#fafaf5] to-emerald-50">
       <Navbar />
@@ -95,8 +99,14 @@ export default function AboutAgroPage() {
                 <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
                   <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">📦</span>
                   <div>
-                    <h4 className="font-bold text-xl text-gray-900 mb-2">Global Exports</h4>
-                    <p className="text-gray-700">Vietnam, India, Europe, Americas</p>
+                    <h4 className="font-bold text-xl text-gray-900 mb-2">Global Partnerships</h4>
+                    <button
+                      onClick={() => setShowPartnershipModal(true)}
+                      className="text-gray-700 hover:text-green-700 underline cursor-pointer text-left focus:outline-none"
+                      aria-label="Open global partnership details"
+                    >
+                      Vietnam, India, Europe, Americas — Seeking Global Partnerships
+                    </button>
                   </div>
                 </div>
               </div>
@@ -144,6 +154,38 @@ export default function AboutAgroPage() {
           </div>
         </div>
       </section>
+
+      {/* Partnership Modal */}
+      {showPartnershipModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative">
+            <button
+              onClick={() => setShowPartnershipModal(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold leading-none focus:outline-none"
+              aria-label="Close partnership details"
+            >
+              &times;
+            </button>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Export Partnerships</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Fatamid International Ltd is dedicated to bridging the gap between Nigeria&apos;s rich agricultural landscape and the global marketplace. 
+              We are actively seeking strategic alliances with reputable international exporters and off-takers in 
+              <strong className="text-green-800"> Vietnam, India, Europe, and the Americas</strong>.
+              <br /><br />
+              By combining our robust local sourcing network and rigorous quality control with your global distribution reach, 
+              we can deliver premium Nigerian commodities to the world while fostering sustainable growth. Partner with us to unlock new opportunities in the global agro-allied sector.
+            </p>
+            <div className="mt-6 text-right">
+              <button
+                onClick={() => setShowPartnershipModal(false)}
+                className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

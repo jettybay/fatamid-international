@@ -162,7 +162,9 @@ style={{
                     <CardDescription className="text-sm text-gray-600">Clean and high-oil content sesame seeds for global markets.</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-700 mb-4">Our sesame seeds are grown with care, providing you with nutritious and high-quality produce for your export and local needs.</p>
+                    <p className="text-sm text-gray-700 mb-4">Our sesame seeds are grown with care, providing you with nutritious and high-quality produce for your export and local needs of
+                      which is a white sesame, humidity controlled.
+                    </p>
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
@@ -179,7 +181,8 @@ style={{
                     <CardDescription className="text-sm text-gray-600">Premium raw cashew nuts from Nigeria&apos;s top producing regions.</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-700 mb-4">Our cashew nuts are carefully harvested and sorted to ensure high out-turn quality (KOR) for global export markets.</p>
+                    <p className="text-sm text-gray-700 mb-4">Our cashew nuts are carefully harvested and sorted to ensure high out-turn quality (KOR) for global export markets
+                      of W320 grade.</p>
                     <Button variant="outline" size="sm" className="w-full">View Details</Button>
                   </CardContent>
                 </Card>
