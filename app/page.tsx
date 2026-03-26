@@ -175,7 +175,7 @@ style={{
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Card 1 */}
                 <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                  <img src="/images/Cashews.webp" alt="Cashew nuts" className="w-full h-48 object-cover" />
+                  <img src="/images/Cashews.jpeg" alt="Cashew nuts" className="w-full h-48 object-cover" />
                   <CardHeader>
                     <CardTitle className="text-lg font-semibold text-primary-900">Cashew nuts</CardTitle>
                     <CardDescription className="text-sm text-gray-600">Premium raw cashew nuts from Nigeria&apos;s top producing regions.</CardDescription>
