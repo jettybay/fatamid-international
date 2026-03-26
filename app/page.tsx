@@ -19,7 +19,7 @@ export default function Home() {
 const [showButton, setShowButton] = useState(false);
 
   const images = [
-    '/images/cashewLand.PNG',
+    '/images/cashewLand.png',
     '/images/maizeLand.avif',
     '/images/SoyaLand.jpg'
   ];
@@ -108,21 +108,21 @@ style={{
               Discover good quality of produces directly from farm gates across Nigeria.
             </p>
 
-            <Tabs defaultValue="grains-cereals" className="w-full max-w-6xl mx-auto">
+            <Tabs defaultValue="legumes-nuts" className="w-full max-w-6xl mx-auto">
               <TabsList className="grid grid-cols-2 h-auto w-full gap-2 mb-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1 z-10">
-                <TabsTrigger 
-                  value="grains-cereals" 
-                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
-                >
-                  <Wheat className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Grains & Cereals</span>
-                </TabsTrigger>
                 <TabsTrigger 
                   value="legumes-nuts" 
                   className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
                 >
                   <Leaf className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
                   <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Nuts & Leafs</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="grains-cereals" 
+                  className="shrink-0 flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-md transition-all duration-200 hover:bg-white/10 data-[state=active]:bg-white data-[state=active]:text-black text-white"
+                >
+                  <Wheat className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-nowrap">Grains & Cereals</span>
                 </TabsTrigger>
               </TabsList>
 

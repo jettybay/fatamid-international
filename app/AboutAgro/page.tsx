@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function AboutAgroPage() {
   const [showPartnershipModal, setShowPartnershipModal] = useState(false);
+  const [showLocalPartnershipModal, setShowLocalPartnershipModal] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#fafaf5] to-emerald-50">
       <Navbar />
@@ -15,7 +16,7 @@ export default function AboutAgroPage() {
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
-            About the Agro-Allied
+            The Commodities
           </h1>
           <p className="text-lg md:text-xl opacity-95 max-w-2xl mx-auto leading-relaxed">
             Exporting Nigeria&apos;s finest agricultural commodities to global markets through sustainable practices.
@@ -72,42 +73,30 @@ export default function AboutAgroPage() {
 
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="space-y-4">
-                <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
-                  <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">🌰</span>
-                  <div>
-                    <h4 className="font-bold text-xl text-gray-900 mb-2">Cashew Nuts</h4>
-                    <p className="text-gray-700">Premium raw cashew nuts, W320 grade</p>
-                  </div>
-                </div>
-                <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
-                  <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">🌾</span>
-                  <div>
-                    <h4 className="font-bold text-xl text-gray-900 mb-2">Sesame Seeds</h4>
-                    <p className="text-gray-700">White sesame, humidity controlled</p>
-                  </div>
+              <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
+                <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">🤝</span>
+                <div>
+                  <h4 className="font-bold text-xl text-gray-900 mb-2">Local Partnerships</h4>
+                  <button
+                    onClick={() => setShowLocalPartnershipModal(true)}
+                    className="text-gray-700 hover:text-green-700 underline cursor-pointer text-left focus:outline-none"
+                    aria-label="Open local partnership details"
+                  >
+                    Building Robust Local Supply Chains
+                  </button>
                 </div>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
-                  <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">🌿</span>
-                  <div>
-                    <h4 className="font-bold text-xl text-gray-900 mb-2">Ginger</h4>
-                    <p className="text-gray-700">Dried split ginger, high purity</p>
-                  </div>
-                </div>
-                <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
-                  <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">📦</span>
-                  <div>
-                    <h4 className="font-bold text-xl text-gray-900 mb-2">Global Partnerships</h4>
-                    <button
-                      onClick={() => setShowPartnershipModal(true)}
-                      className="text-gray-700 hover:text-green-700 underline cursor-pointer text-left focus:outline-none"
-                      aria-label="Open global partnership details"
-                    >
-                      Vietnam, India, Europe, Americas — Seeking Global Partnerships
-                    </button>
-                  </div>
+              <div className="flex items-start p-4 bg-green-50/50 rounded-2xl border-l-4 border-[#FFFDD0]">
+                <span className="text-[#FFFDD0] text-2xl mr-4 mt-1 bg-green-600 px-3 py-2 rounded-xl">🌍</span>
+                <div>
+                  <h4 className="font-bold text-xl text-gray-900 mb-2">Global Partnerships</h4>
+                  <button
+                    onClick={() => setShowPartnershipModal(true)}
+                    className="text-gray-700 hover:text-green-700 underline cursor-pointer text-left focus:outline-none"
+                    aria-label="Open global partnership details"
+                  >
+                    Connecting Nigeria to Global Markets
+                  </button>
                 </div>
               </div>
             </div>
@@ -166,18 +155,52 @@ export default function AboutAgroPage() {
             >
               &times;
             </button>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Export Partnerships</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Export Excellence</h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Fatamid International Ltd is dedicated to bridging the gap between Nigeria&apos;s rich agricultural landscape and the global marketplace. 
-              We are actively seeking strategic alliances with reputable international exporters and off-takers in 
-              <strong className="text-green-800"> Vietnam, India, Europe, and the Americas</strong>.
+              Fatamid International Ltd serves as the premier bridge between Nigeria&apos;s rich agricultural potential and the 
+              global appetite for quality. We are actively seeking strategic alliances with reputable international exporters 
+              and off-takers in <strong className="text-green-800">Vietnam, India, Europe, and the Americas, e.t.c</strong>.
               <br /><br />
-              By combining our robust local sourcing network and rigorous quality control with your global distribution reach, 
-              we can deliver premium Nigerian commodities to the world while fostering sustainable growth. Partner with us to unlock new opportunities in the global agro-allied sector.
+              By combining our robust local sourcing network and rigorous quality control with your global distribution 
+              expertise, we deliver premium Nigerian commodities that meet international standards. Partner with us 
+              to unlock unparalleled opportunities in the global agro-allied sector.
             </p>
             <div className="mt-6 text-right">
               <button
                 onClick={() => setShowPartnershipModal(false)}
+                className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Local Partnership Modal */}
+      {showLocalPartnershipModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative">
+            <button
+              onClick={() => setShowLocalPartnershipModal(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold leading-none focus:outline-none"
+              aria-label="Close local partnership details"
+            >
+              &times;
+            </button>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Empowering Local Roots</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Fatamid International Ltd is committed to strengthening Nigeria&apos;s agricultural sector by fostering 
+              deep-rooted alliances with <strong className="text-green-800">local farmers and aggregators</strong>.
+              <br /><br />
+              We provide essential support including high-quality inputs, sustainable farming techniques, and guaranteed 
+              off-take arrangements. Our goal is to empower local communities, improve livelihoods, and ensure a 
+              transparent and efficient supply chain from farm gate to market. Partner with us to grow the future 
+              of Nigerian agriculture.
+            </p>
+            <div className="mt-6 text-right">
+              <button
+                onClick={() => setShowLocalPartnershipModal(false)}
                 className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
               >
                 Close
