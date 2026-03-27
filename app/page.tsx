@@ -16,6 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GalleryPage from "./Gallary/page";
 
 export default function Home() {
 const [showButton, setShowButton] = useState(false);
@@ -98,11 +99,8 @@ const [showButton, setShowButton] = useState(false);
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-6 flex flex-col items-center"
           >
-            
-            <h1 className="text-5xl md:text-5xl font-bold leading-tight drop-shadow-lg">
-              <span className="text-white">FATAMID</span>
-            </h1>
-            <h1 className="text-5xl md:text-4xl font-bold leading-tight drop-shadow-lg">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight drop-shadow-lg">
+              <span className="text-white">FATAMID </span>
               <span className="text-green-600">International Ltd</span>
             </h1>
           </motion.div>
@@ -252,6 +250,8 @@ const [showButton, setShowButton] = useState(false);
           </div>
         </motion.section>
       </section>
+
+      <GalleryPage />
       </main>
       <Footer />
     </motion.div>
