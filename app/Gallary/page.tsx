@@ -87,6 +87,7 @@ export default function GalleryPage() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  priority={item.id === 1}
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <span className="text-white font-medium px-4 py-2 border border-white rounded-full backdrop-blur-sm">
@@ -121,6 +122,7 @@ export default function GalleryPage() {
                     src={selectedImage.src}
                     alt={selectedImage.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 800px"
                     className="object-cover"
                   />
                 </div>
