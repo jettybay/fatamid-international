@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
           </motion.div>
         </Link>
-        <p className="text-[10px] md:text-xs opacity-70">
+        <p className="text-[10px] md:text-xs opacity-90">
           © 2026 All rights reserved.
         </p>
       </div>
