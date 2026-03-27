@@ -15,10 +15,11 @@ export default function AboutAgroPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen bg-gradient-to-br from-[#fafaf5] to-emerald-50"
+      className="min-h-screen flex flex-col bg-gradient-to-br from-[#fafaf5] to-emerald-50"
     >
       <Navbar />
 
+      <main className="flex-grow">
       {/* Hero Section - Agro Theme */}
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#1a472a] via-green-700 to-emerald-800 text-[#FFFDD0]">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -262,6 +263,7 @@ export default function AboutAgroPage() {
           </div>
         </div>
       )}
+      </main>
       <Footer />
     </motion.div>
   );

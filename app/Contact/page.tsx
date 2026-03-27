@@ -23,10 +23,10 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
-      <main className="bg-white text-gray-900 overflow-hidden">
+      <main className="flex-grow text-gray-900 overflow-hidden">
         {/* CONTENT */}
         <section className="pt-32 pb-16">
           <div className="max-w-6xl mx-auto px-6">
@@ -122,7 +122,7 @@ export default function ContactPage() {
 
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

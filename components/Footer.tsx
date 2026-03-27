@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-green-900 via-green-800 to-emerald-900 text-white/90 py-1 border-t border-white/10">
+    <footer className="w-full bg-gradient-to-r from-green-900 via-green-800 to-emerald-900 text-white/90 py-1 border-t border-white/10">
       <div className="container mx-auto px-6 flex flex-col items-center text-center gap-0">
         {/* Logo */}
         <Link href="/" className="group block overflow-hidden w-32 relative h-8">
@@ -31,7 +31,7 @@ export default function Footer() {
           </motion.div>
         </Link>
         <p className="text-[10px] md:text-xs opacity-70">
-          © 2026 Fatamid International Ltd. All rights reserved.
+          © 2026 All rights reserved.
         </p>
       </div>
     </footer>

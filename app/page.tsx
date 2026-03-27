@@ -56,13 +56,15 @@ const [showButton, setShowButton] = useState(false);
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
+      className="min-h-screen flex flex-col bg-white"
     >
       <Navbar />
 
+      <main className="flex-grow">
       {/* Hero Section */}
       <section 
         className="relative text-white overflow-hidden"
-style={{
+        style={{
           minHeight: '780px'
         }}
       >
@@ -250,6 +252,7 @@ style={{
           </div>
         </motion.section>
       </section>
+      </main>
       <Footer />
     </motion.div>
   );
