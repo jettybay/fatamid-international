@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fatamid International Ltd.",
+  title: "Fatamid International Ltd",
   description: "Agro-Allied Services, Trading, and Consultancy",
   verification: {
     google: "SCD9WgMb_6kbwIkjqI950-OvMJIJTgsp8M7TX24uJog",
