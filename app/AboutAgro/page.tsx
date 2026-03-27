@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
 
 export default function AboutAgroPage() {
   const [showPartnershipModal, setShowPartnershipModal] = useState(false);
@@ -261,6 +262,7 @@ export default function AboutAgroPage() {
           </div>
         </div>
       )}
+      <Footer />
     </motion.div>
   );
 }

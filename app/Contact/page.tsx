@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
 import {
   MapPin,
   Phone,
@@ -12,9 +13,15 @@ import {
 } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function ContactPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -25,9 +32,8 @@ export default function ContactPage() {
           <div className="max-w-6xl mx-auto px-6">
             {/* CONTACT DETAILS */}
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={mounted ? { opacity: 0, x: -40 } : false}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               className="flex flex-col items-center text-center"
             >
@@ -61,7 +67,7 @@ export default function ContactPage() {
               </div>
 
               {/* SOCIAL MEDIA */}
-              <div className="mt-12 flex flex-col items-center">
+              {/* <div className="mt-12 flex flex-col items-center">
                 <h3 className="text-lg font-semibold mb-5 text-gray-700">
                   Connect with us
                 </h3>
@@ -88,7 +94,7 @@ export default function ContactPage() {
                     link="#"
                   />
                 </div>
-              </div>
+              </div> */}
             </motion.div>
 
             {/* CONTACT FORM (uncomment when you're ready to add backend) */}
@@ -115,7 +121,7 @@ export default function ContactPage() {
         </section>
 
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
