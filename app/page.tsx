@@ -164,7 +164,7 @@ const [showButton, setShowButton] = useState(false);
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Our maize is sourced from trusted farmers across Nigeria, ensuring freshness and quality for your needs.</p>
-                    <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button>
+                    {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
 
@@ -177,7 +177,7 @@ const [showButton, setShowButton] = useState(false);
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Our soya grains are cultivated by experienced farmers, ensuring top-notch quality for oil production and high-protein feed.</p>
-                    <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button>
+                    {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
 
@@ -192,7 +192,7 @@ const [showButton, setShowButton] = useState(false);
                     <p className="text-sm text-gray-700 mb-4">Our sesame seeds are grown with care, providing you with nutritious and high-quality produce for your export and local needs of
                       which is a white sesame, humidity controlled.
                     </p>
-                    <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button>
+                    {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
               </motion.div>
@@ -215,20 +215,20 @@ const [showButton, setShowButton] = useState(false);
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Our cashew nuts are carefully harvested and sorted to ensure high out-turn quality (KOR) for global export markets
                       of W320 grade.</p>
-                    <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button>
+                    {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
 
                 {/* Card 2 */}
                 <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                  <img src="/images/Hisbiscus leaves.jpeg" alt="Hibiscus leaves" className="w-full h-48 object-cover" />
+                  <img src="/images/Hisbiscusleaves.jpeg" alt="Hibiscus leaves" className="w-full h-48 object-cover" />
                   <CardHeader>
                     <CardTitle className="text-lg font-semibold text-primary-900">Hibiscus leaves</CardTitle>
                     <CardDescription className="text-sm text-gray-600">High-quality dried hibiscus flowers for teas and industrial use.</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Sourced from the arid regions of Northern Nigeria, our hibiscus is carefully sun-dried to preserve its deep red color and tart flavor profile.</p>
-                    <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button>
+                    {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
 
@@ -241,7 +241,7 @@ const [showButton, setShowButton] = useState(false);
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Our shea nuts are wild-harvested and sun-dried to maintain high oil content and purity, perfect for the cosmetic and food industries.</p>
-                    <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button>
+                    {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
               </motion.div>

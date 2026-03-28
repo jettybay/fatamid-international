@@ -14,7 +14,7 @@ interface GalleryItem {
 const galleryImages: GalleryItem[] = [
   { id: 1, src: '/images/Cashew1.jpeg', title: 'Premium Cashew Nuts', description: 'High-quality, sun-dried cashew nuts sourced from local farms, ready for processing and export.' },
   { id: 2, src: '/images/Cashew2.jpeg', title: 'Fresh Cashew Harvest', description: 'Freshly harvested cashew nuts showing the natural texture and quality of our produce.' },
-  { id: 3, src: '/images/Hisbiscus leaves.jpeg', title: 'Dried Hibiscus Leaves', description: 'Deep red, flavorful dried hibiscus leaves, perfect for teas, extracts, and culinary use.' },
+  { id: 3, src: '/images/Hisbiscusleaves.jpeg', title: 'Dried Hibiscus Leaves', description: 'Deep red, flavorful dried hibiscus leaves, perfect for teas, extracts, and culinary use.' },
   { id: 4, src: '/images/Sesame.jpg', title: 'Natural Sesame Seeds', description: 'Clean, high-oil content sesame seeds meticulously processed for international standards.' },
   { id: 5, src: '/images/SesameInSack.jpeg', title: 'Packaged Sesame', description: 'Sesame seeds professionally cleaned and packed in high-grade sacks for secure transit.' },
   { id: 6, src: '/images/SoyaInSack.jpeg', title: 'Bulk Soya Beans', description: 'Nutrient-rich soya beans stored in bulk sacks, maintained in temperature-controlled environments.' },
@@ -89,11 +89,7 @@ export default function GalleryPage() {
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                   priority={item.id === 1}
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span className="text-white font-medium px-4 py-2 border border-white rounded-full backdrop-blur-sm">
-                    View Details
-                  </span>
-                </div>
+               
               </div>
             </motion.div>
           ))}
