@@ -92,7 +92,7 @@ const [showButton, setShowButton] = useState(false);
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-900/60 to-primary-700/80"></div>
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative container mx-auto px-6 pt-24 pb-4 md:pt-32 md:pb-12 text-center">
+        <div className="relative container mx-auto px-6 pt-24 pb-2 md:pt-32 md:pb-4 text-center">
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ const [showButton, setShowButton] = useState(false);
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto opacity-90 drop-shadow-md"
+            className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto opacity-90 drop-shadow-md"
           >
             Bridging the supply gap, empowering farmers, and connecting buyers across Nigeria&apos;s agricultural landscape.
           </motion.p>
@@ -125,7 +125,7 @@ const [showButton, setShowButton] = useState(false);
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative pt-8 pb-20 bg-primary-50"
+          className="relative pt-4 pb-20 bg-primary-50"
         >
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-2 text-primary-900">
