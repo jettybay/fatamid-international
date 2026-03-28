@@ -99,10 +99,15 @@ const [showButton, setShowButton] = useState(false);
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-6 flex flex-col items-center"
           >
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight drop-shadow-lg">
-              <span className="text-white">FATAMID </span>
-              <span className="text-green-600">International Ltd</span>
-            </h1>
+        <h1 className="text-4xl md:text-6xl font-black leading-[0.9] tracking-tight filter drop-shadow-[0_6px_6px_rgba(0,0,0,0.4)]">
+          <span className="bg-gradient-to-b from-white via-emerald-200 to-emerald-500 bg-clip-text text-transparent">
+            FATAMID
+          </span>
+          <br />
+          <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">
+            International Ltd
+          </span>
+        </h1>
           </motion.div>
           <motion.p 
             initial={{ opacity: 0 }}
