@@ -20,7 +20,7 @@ const values = [
   },
   {
     title: "Strategic Partnerships",
-    desc: "We build long-term relationships with farmers, suppliers, processor, and offtakers, creating value through collaboration and mutual growth.",
+    desc: "We build long-term relationships with farmers, suppliers, processors, and offtakers, creating value through collaboration and mutual growth.",
     image: "/images/partnership.jpg",
     alt: "International team collaborating and working together on a project",
   },
