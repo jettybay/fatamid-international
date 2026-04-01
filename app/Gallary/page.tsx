@@ -18,7 +18,7 @@ const galleryImages: GalleryItem[] = [
   { id: 3, src: '/images/Hisbiscusleaves.jpeg', title: 'Dried Hibiscus Leaves', description: 'Deep red, flavorful dried hibiscus leaves, perfect for teas, extracts, and culinary use.' },
   { id: 4, src: '/images/Sesame.jpg', title: 'Natural Sesame Seeds', description: 'Clean, high-oil content sesame seeds meticulously processed for international standards.' },
   { id: 5, src: '/images/SesameInSack.jpeg', title: 'Packaged Sesame', description: 'Sesame seeds professionally cleaned and packed in high-grade sacks for secure transit.' },
-  { id: 6, src: '/images/SoyaInSack.jpeg', title: 'Bulk Soya Beans', description: 'Nutrient-rich soya beans stored in bulk sacks, maintained in temperature-controlled environments.' },
+  { id: 6, src: '/images/SoyaInSack.jpg', title: 'Bulk Soya Beans', description: 'Nutrient-rich soya beans stored in bulk sacks, maintained in temperature-controlled environments.' },
   { id: 7, src: '/images/StuckedSesame.jpeg', title: 'Stacked Sesame Inventory', description: 'Our organized inventory system ensures quick turnaround and logistical efficiency.' },
   { id: 8, src: '/images/loadedTruck.jpeg', title: 'Logistics & Distribution', description: 'Fully loaded trucks prepared for nationwide distribution and port delivery for global export.' },
 ];

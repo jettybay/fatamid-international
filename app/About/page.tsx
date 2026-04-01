@@ -6,10 +6,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
+import CoreValues from '../Value/page';
 
-export default function AboutAgroPage() {
+export default function AboutPage() {
   const [showPartnershipModal, setShowPartnershipModal] = useState(false);
   const [showLocalPartnershipModal, setShowLocalPartnershipModal] = useState(false);
+
+ 
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -142,62 +146,8 @@ export default function AboutAgroPage() {
         </div>
       </section>
 
-      {/* Capabilities Section */}
-      <section className="py-20 bg-gradient-to-t from-emerald-50 to-[#fafaf5]">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.h3 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 bg-gradient-to-r from-[#1a472a] to-green-800 bg-clip-text text-transparent"
-          >
-            Our Agricultural Capabilities
-          </motion.h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center group"
-            >
-              <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 shadow-xl group-hover:scale-110 transition-all duration-300">
-                <div className="w-full h-full flex items-center justify-center text-2xl text-white">👨‍🌾</div>
-              </div>
-              <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Farmer Networks</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Direct partnerships with smallholder farmers</p>
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center group"
-            >
-              <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-500 shadow-xl group-hover:scale-110 transition-all duration-300 border-4 border-[#FFFDD0]">
-                <div className="w-full h-full flex items-center justify-center text-2xl text-gray-800 font-bold">QC</div>
-              </div>
-              <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Quality Control</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Moisture, purity, aflatoxin, material testing</p>
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-center group"
-            >
-              <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-400 to-emerald-500 shadow-xl group-hover:scale-110 transition-all duration-300">
-                <div className="w-full h-full flex items-center justify-center text-2xl text-white">🚚</div>
-              </div>
-              <h4 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-[#1a472a]">Logistics</h4>
-              <p className="text-lg text-gray-700 max-w-md mx-auto">Haulage, transportation</p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
+      <CoreValues />
+     
       {/* Partnership Modal */}
       {showPartnershipModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">

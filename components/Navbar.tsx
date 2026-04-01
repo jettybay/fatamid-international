@@ -14,16 +14,17 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/AboutAgro' },
+    { label: 'About', href: '/About' },
     { label: 'Contact', href: '/Contact' },
+    
   ];
 
   return (
     <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-lg border-b border-green-50 shadow-sm transition-all duration-300">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="relative group">
+        <Link href="/" className="relative group">
           <img 
-            src="/images/Fatamid.jpeg" 
+            src="/images/Fatamid.jpeg"  
             alt="Fatamid Logo" 
             className={`
               w-12 h-12 md:w-14 md:h-14 
@@ -33,7 +34,7 @@ export default function Navbar() {
               group-hover:rotate-[360deg] cursor-pointer
             `}
           />
-        </div>
+        </Link>
 
         <div className="flex gap-6">
           {navItems.map((item) => {
