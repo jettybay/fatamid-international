@@ -21,6 +21,8 @@ const galleryImages: GalleryItem[] = [
   { id: 6, src: '/images/SoyaInSack.jpg', title: 'Bulk Soya Beans', description: 'Nutrient-rich soya beans stored in bulk sacks, maintained in temperature-controlled environments.' },
   { id: 7, src: '/images/StuckedSesame.jpeg', title: 'Stacked Sesame Inventory', description: 'Our organized inventory system ensures quick turnaround and logistical efficiency.' },
   { id: 8, src: '/images/loadedTruck.jpeg', title: 'Logistics & Distribution', description: 'Fully loaded trucks prepared for nationwide distribution and port delivery for global export.' },
+  { id: 9, src: '/images/CassiaToraSeeds.jpeg', title: 'Cassia Tora Seeds', description: 'Quality Cassia Tora seeds from our Grains & Cereals selection, processed to meet international standards.' },
+  { id: 10, src: '/images/Stoneflower.jpg', title: 'Stone Flower', description: 'Dried Stone Flower from our Nuts & Leafs collection, known for its distinct earthy aroma and culinary use.' },
 ];
 
 const containerVariants: Variants = {

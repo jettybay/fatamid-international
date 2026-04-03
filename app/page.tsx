@@ -198,6 +198,18 @@ const [showButton, setShowButton] = useState(false);
                     {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
                   </CardContent>
                 </Card>
+
+                {/* Card 4 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/CassiaTora.png" alt="Cassia Tora Seeds" className="w-full h-48 object-cover" />
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Cassia Tora Seeds</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Clean and well-dried Cassia Tora seeds for global industrial and medicinal use.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Also known as Sicklepod, our Cassia Tora seeds are harvested at peak maturity and processed to maintain high purity and quality standards.</p>
+                  </CardContent>
+                </Card>
               </motion.div>
             </TabsContent>
 
@@ -245,6 +257,18 @@ const [showButton, setShowButton] = useState(false);
                   <CardContent>
                     <p className="text-sm text-gray-700 mb-4">Our shea nuts are wild-harvested and sun-dried to maintain high oil content and purity, perfect for the cosmetic and food industries.</p>
                     {/* <Button variant="outline" size="sm" className="w-full text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white">View Details</Button> */}
+                  </CardContent>
+                </Card>
+
+                {/* Card 4 */}
+                <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img src="/images/Stoneflowers.png" alt="Stoneflower" className="w-full h-48 object-cover" />
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold text-primary-900">Stone flower</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">Aromatic dried stoneflower (Kalpasi) collected from natural habitats.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700 mb-4">Our stoneflower is carefully hand-picked and dried, known for its unique earthy fragrance and used extensively in premium spice blends and traditional remedies.</p>
                   </CardContent>
                 </Card>
               </motion.div>
