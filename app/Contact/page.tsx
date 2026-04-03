@@ -56,7 +56,11 @@ export default function ContactPage() {
                 <ContactItem
                   icon={<Phone className="w-7 h-7" />}
                   title="Phone / WhatsApp"
-                  text="+2348035510234"
+                  text="+234 803 551 0234"
+                  options={[
+                    { label: "Call", href: "tel:+2348035510234" },
+                    { label: "WhatsApp", href: "https://wa.me/2348035510234" },
+                  ]}
                 />
 
                 <ContactItem
@@ -132,23 +136,52 @@ function ContactItem({
   icon,
   title,
   text,
+  options,
 }: {
   icon: React.ReactNode;
   title: string;
   text: string;
+  options?: { label: string; href: string }[];
 }) {
+  const [showOptions, setShowOptions] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
-      className="flex flex-col items-center text-center max-w-xs"
+      className={`flex flex-col items-center text-center max-w-xs transition-all ${
+        options ? "cursor-pointer group" : ""
+      }`}
+      onClick={() => options && setShowOptions(!showOptions)}
     >
-      <div className="text-green-700 mb-3">{icon}</div>
+      <div className={`text-green-700 mb-3 transition-transform ${options && !showOptions ? "group-hover:scale-110" : ""}`}>
+        {icon}
+      </div>
       <div>
         <h4 className="font-semibold text-lg text-gray-900">{title}</h4>
         <p className="text-gray-600 mt-1 leading-relaxed">{text}</p>
+        {showOptions && options && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-4 flex gap-3 justify-center"
+          >
+            {options.map((opt) => (
+              <a
+                key={opt.label}
+                href={opt.href}
+                target={opt.href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-green-700 text-white text-sm font-medium rounded-xl hover:bg-green-800 transition-colors shadow-sm"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {opt.label}
+              </a>
+            ))}
+          </motion.div>
+        )}
       </div>
     </motion.div>
   );
