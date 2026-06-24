@@ -115,6 +115,13 @@ export default function AepgosingPage() {
       className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+
+      <div className="mt-12 mb-4 flex justify-center">
+        <div className="text-center text-xs text-black/100 bg-white/80 border border-gray-100 rounded-full px-4 py-2 shadow-sm">
+          Powered by Fatamid International Ltd
+        </div>
+      </div>
+        
         {/* Hero */}
         <motion.section
           className="relative h-[500px] rounded-[28px] overflow-hidden bg-gradient-to-br from-purple-950 via-purple-700 to-fuchsia-500"
@@ -279,9 +286,7 @@ export default function AepgosingPage() {
         </div>
 
         {/* Bottom mobile order hint */}
-        <div className="mt-12 text-center text-xs text-gray-500">
-          Powered by Fatamid International.
-        </div>
+       
       </div>
       <Footer />
     </div>
