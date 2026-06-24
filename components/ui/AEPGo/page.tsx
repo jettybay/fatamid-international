@@ -115,10 +115,17 @@ export default function AepgosingPage() {
       className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <div className="mt-12 mb-4 flex flex-wrap items-center justify-center gap-3">
+        <img
+          src="/aepgo logo.png"
+          className="h-full w-50 object-cover transition-transform duration-300 hover:scale-[1.02]"
+          alt="AEPGo"
+          loading="eager"
+        />
 
-      <div className="mt-12 mb-4 flex justify-center">
-        <div className="text-center text-xs text-black/100 bg-white/80 border border-gray-100 rounded-full px-4 py-2 shadow-sm">
-          Powered by Fatamid International Ltd
+        <div className="text-center text-xs text-black/100 bg-white/80 border border-gray-100 rounded-full px-4 py-2 shadow-sm relative">
+          <span className="pointer-events-none absolute inset-0 rounded-full bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.95),_transparent_60%)]" />
+          <span className="relative font-bold">Powered by Fatamid International Ltd</span>
         </div>
       </div>
         
@@ -140,7 +147,7 @@ export default function AepgosingPage() {
             <div className="text-center text-white px-4">
 
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">  
-              Agric-Energy Pay-as-you-Go (AEPGo)
+              Agro-Energy Pay-as-you-Go (AEPGo)
             </h1>
               
               <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gold-90 mt-5">
