@@ -147,7 +147,7 @@ export default function AepgosingPage() {
             <div className="text-center text-white px-4">
 
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">  
-              Agro-Energy Pay-as-you-Go (AEPGo)
+              AgroEnergy Pay-as-you-Go (AEPGo)
             </h1>
               
               <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gold-90 mt-5">
