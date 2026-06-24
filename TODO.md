@@ -1,16 +1,7 @@
-# TASK: Adopt folder name 'About' (from 'AboutAgro') - ✅ COMPLETED
+- [x] Modify components/ui/AEPGo/page.tsx
 
-## Steps Completed:
+  - [ ] Add click-to-zoom modal overlay (responsive) for /AEPGoimg.png
+  - [ ] Fix the UI link to be a proper anchor pointing to https://stonelearn.vercel.app
+  - [x] Sanity check: modal opens/closes on mobile + link opens correct URL
 
-### 1. ✅ Created tracking TODO.md with plan steps
-### 2. ✅ Edited components/Navbar.tsx - Updated href from '/About Us' to '/About' (Navbar now links to correct /About route)
-### 3. ✅ Verified app/About/page.tsx exists and functions properly (AboutPage component ready)
-### 4. ✅ Updated this TODO.md to reflect final state and mark complete
 
-**All changes applied.** No remaining 'AboutAgro' or '/About Us' references.
-
-## Next (User Action):
-- Run `npm run dev` to start dev server.
-- Visit http://localhost:3000 → Click "About" in Navbar → should load /about page smoothly.
-- Navbar active state/highlight will work correctly on /about.
-- Check browser console (no errors expected).

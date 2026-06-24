@@ -1,7 +1,7 @@
 'use client';
 
 import { Leaf, Wheat } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, } from "react";
 import { motion } from "framer-motion";
 import {
   Card,
@@ -12,9 +12,12 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+import Link from "next/link";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GalleryPage from "./Gallary/page";
+
 
 export default function Home() {
 const [showButton, setShowButton] = useState(false);
@@ -277,6 +280,13 @@ const [showButton, setShowButton] = useState(false);
           </div>
         </motion.section>
       </section>
+
+      <Link
+        href="/components/ui/AEPGo"
+        className="fixed bottom-4 right-4 bg-black/90 text-gold-90 px-4 py-2 rounded-full shadow-lg hover:bg-primary-800 transition-colors duration-300 z-50"
+      >
+        AEPGo
+      </Link>
 
       <GalleryPage />
       </main>
