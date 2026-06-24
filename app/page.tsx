@@ -282,12 +282,15 @@ const [showButton, setShowButton] = useState(false);
       </section>
 
       <Link
-        href="/components/ui/AEPGo"
+        href="/AEPGo"
         aria-label="AEPGo"
         className="fixed bottom-4 right-4 z-50 grid place-items-center h-14 w-14 rounded-full bg-black/90 text-gold-90 shadow-lg hover:bg-primary-800 transition-colors duration-300"
       >
-        <span className="inline-block will-change-transform animate-[spin_2s_linear_infinite]">
-          AEPGo
+        <span className="relative inline-block will-change-transform">
+          <span className="absolute -inset-2 rounded-full bg-gold-90/20 blur-sm" aria-hidden="true" />
+          <span className="relative inline-block will-change-transform animate-[spin_2s_linear_infinite]">
+            <span className="inline-block animate-[zoom_0.9s_ease-in-out_infinite]">AEPGo</span>
+          </span>
         </span>
       </Link>
 
