@@ -155,9 +155,9 @@ export default function AepgosingPage() {
               </h2>
 
               <p className="mt-4 max-w-4xl text-xl sm:text-2xl text-white/95">
-                Empowering smallholder farmers
-                through productive assets, energy, finance and
-                market access.
+                AEPGo, an AI-enabled AgriFinTech platform that integrates precision agriculture, 
+                embedded finance, renewable energy, mechanization, and market access for underserved smallholder
+                 farmers across Africa.
               </p>
 
               <div className="mt-8 inline-flex items-center gap-3 rounded-full bg-white/15 border border-white/20 px-5 py-3 backdrop-blur">
@@ -186,10 +186,6 @@ export default function AepgosingPage() {
                   alt="AEPGo"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
-                {/* <div className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm">
-                  Click to view illustration
-                </div> */}
               </div>
             </button>
           </div>
@@ -212,7 +208,7 @@ export default function AepgosingPage() {
         <ZoomImageModal
           open={zoomOpen}
           onOpenChange={setZoomOpen}
-          src="/AEPGo.png"
+          src="/aepgo.png"
           alt="AEPGo"
         />
 
