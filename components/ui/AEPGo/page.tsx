@@ -155,7 +155,7 @@ export default function AepgosingPage() {
               </h2>
 
               <p className="mt-4 max-w-4xl text-xl sm:text-2xl text-white/95">
-                AEPGo, an AI-enabled AgriFinTech platform that integrates precision agriculture, 
+                An AI-enabled AgriFinTech platform that integrates precision agriculture, 
                 embedded finance, renewable energy, mechanization, and market access for underserved smallholder
                  farmers across Africa.
               </p>
