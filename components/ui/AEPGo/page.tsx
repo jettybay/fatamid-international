@@ -147,7 +147,7 @@ export default function AepgosingPage() {
 
         {/* Hero */}
         <motion.section
-          className="relative h-[500px] overflow-hidden rounded-[28px] bg-gradient-to-br from-purple-950 via-purple-700 to-fuchsia-500"
+          className="relative h-[500px] overflow-hidden rounded-[28px] bg-[#d59109]"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -160,12 +160,12 @@ export default function AepgosingPage() {
           <div className="absolute inset-0 bg-black/10 mix-blend-overlay" />
 
           <div className="relative z-10 flex h-full items-center justify-center">
-            <div className="px-4 text-center text-white">
+            <div className="px-4 text-center text-[#031a83]">
               <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
                 AgroEnergy Pay-as-you-Go (AEPGo)
               </h1>
 
-              <h2 className="mt-5 text-3xl font-bold tracking-tight text-gold-90 sm:text-5xl">
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-black sm:text-5xl">
                 Theory of Change
               </h2>
 
