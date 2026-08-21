@@ -136,7 +136,7 @@ export default function AboutPage() {
             </div>
 
             <Link
-              href="/Contact"
+              href="/contact"
               className="inline-flex items-center gap-3 px-12 py-5 bg-gradient-to-r from-[#1a472a] via-green-700 to-emerald-800 hover:from-green-700 hover:to-emerald-900 text-[#FFFDD0] rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl hover:scale-[1.02] transition-all duration-300 border border-[#FFFDD0]/30 hover:border-white/50"
             >
               Partner With Us
