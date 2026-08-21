@@ -12,7 +12,8 @@ const nextConfig: NextConfig = {
     return [
       { source: "/about", destination: "/About" },
       { source: "/contact", destination: "/Contact" },
-      { source: "/AEPGo", destination: "/aepgo" },
+      { source: "/aepgo", destination: "/AEPGo" },
+      { source: "/AEPGo", destination: "/AEPGo" },
     ];
   },
 };
