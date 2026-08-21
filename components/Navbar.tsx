@@ -2,20 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/About' },
-    { label: 'Contact', href: '/Contact' },
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
     
   ];
 
@@ -30,7 +24,7 @@ export default function Navbar() {
               w-12 h-12 md:w-14 md:h-14 
               rounded-full shadow-md border-2 border-green-100 object-cover
               transition-all duration-1000 ease-out
-              ${isMounted ? 'scale-100 opacity-100 rotate-0' : 'scale-0 opacity-0 -rotate-180'}
+              scale-100 opacity-100 rotate-0
               group-hover:rotate-[360deg] cursor-pointer
             `}
           />

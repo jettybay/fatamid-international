@@ -282,7 +282,7 @@ const [showButton, setShowButton] = useState(false);
       </section>
 
       <Link
-        href="/AEPGo"
+        href="/aepgo"
         aria-label="AEPGo"
         className="fixed bottom-4 right-4 z-50 grid place-items-center h-14 w-14 rounded-full bg-black/90 text-gold-90 shadow-lg hover:bg-primary-800 transition-colors duration-300"
       >

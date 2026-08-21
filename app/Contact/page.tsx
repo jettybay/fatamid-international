@@ -1,27 +1,12 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Facebook,
-  Instagram,
-  Linkedin,
-  X,
-} from "lucide-react";
-import { FaTiktok } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function ContactPage() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
@@ -32,7 +17,7 @@ export default function ContactPage() {
           <div className="max-w-6xl mx-auto px-6">
             {/* CONTACT DETAILS */}
             <motion.div
-              initial={mounted ? { opacity: 0, x: -40 } : false}
+              initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               className="flex flex-col items-center text-center"

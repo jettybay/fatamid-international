@@ -95,11 +95,11 @@ export default function AboutPage() {
               Our Mission
             </h2>
            <p className="text-lg text-gray-800 mb-8 leading-relaxed">
-            To become Nigeria's premier agro-commodities aggregator and trusted global partner, delivering premium, sustainably sourced agricultural 
+            To become Nigeria&apos;s premier agro-commodities aggregator and trusted global partner, delivering premium, sustainably sourced agricultural 
             products while empowering local farmers and bridging them to international markets.
-            This version keeps it concise (one strong sentence), professional, and aligned with Fatamid International Ltd's focus on aggregation, export, quality, 
+            This version keeps it concise (one strong sentence), professional, and aligned with Fatamid International Ltd&apos;s focus on aggregation, export, quality, 
             farmer support, and sustainability without copying unrelated entities or industries. It positions the company aspiringly yet realistically for the agro sector.
-            If you'd like variations (e.g., shorter, more emphasis on sustainability/farmers/exports, or adding "vision" too), just let me know!
+            If you&apos;d like variations (e.g., shorter, more emphasis on sustainability/farmers/exports, or adding &quot;vision&quot; too), just let me know!
            </p> 
            </div>
 

@@ -9,10 +9,6 @@ export default function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: "https://fatamid.com/services",
-      lastModified: new Date(),
-    },
-    {
       url: "https://fatamid.com/contact",
       lastModified: new Date(),
     },
